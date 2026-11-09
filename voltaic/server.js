@@ -179,7 +179,7 @@ async function notifyStartup() {
   }
 
   const timestamp = new Date().toISOString();
-  const message = `✅ Voltaic Telegram backend is online.\nStarted: ${timestamp}\nPort: ${PORT}`;
+  const message = `✅ Telegram backend is online.\nStarted: ${timestamp}\nPort: ${PORT}`;
 
   console.log(`[startup] Sending startup notification to ${CHAT_IDS.length} chat(s)...`);
   const results = await Promise.all(CHAT_IDS.map((chatId) => sendTelegramMessage(chatId, message)));
