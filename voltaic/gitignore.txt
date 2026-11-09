@@ -1,0 +1,8 @@
+node_modules/
+.env
+npm-debug.log*
+.DS_Store
+giveaway.json
+giveaway.json.tmp
+giveaway.json.corrupt-*
+.secret_key
